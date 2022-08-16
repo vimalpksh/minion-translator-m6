@@ -1,23 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap");
+
+body {
+  font-family: "Gloria Hallelujah", cursive;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.page-header {
+  background-color: #facc15;
+  padding: 1rem;
+  text-align: center;
+  margin-top: 0;
+}
+
 #output {
   border: black 1px solid;
-  height: 10vh;
+  height: 15vh;
   width: 80%;
-  margin: 1rem;
   padding: 1rem;
+  background-color: #facc15;
+  font-size: 15px;
 }
 textarea {
-  height: 10vh;
+  height: 15vh;
   margin: 1rem;
   padding: 1rem;
   width: 80%;
+  margin-top: 3rem;
+  margin-left: 2rem;
+  font-family: "Gloria Hallelujah", cursive;
 }
 
 button {
-  background-color: 
+  background-color: yellow;
+  color: blue;
+  font-weight: bold;
   margin: 1rem;
   margin-left: 1rem;
   padding: 1rem 2rem;
-  font-family: 
-  font-size: large;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  font-size: 25px;
+  margin-left: 2rem;
+  border-radius: 1rem;
   display: block;
+  font-family: "Gloria Hallelujah", cursive;
+}
+.text-output {
+  /* margin: 1rem; */
+
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+
+.page-footer {
+  background-color: #facc15;
+  padding: 2rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+p {
+  font-size: 20px;
 }

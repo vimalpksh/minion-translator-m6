@@ -11,6 +11,11 @@ function constructURL(input) {
   return serverURL + "?" + "text=" + input;
 }
 
+function errorHandler(error) {
+  console.log("error occured", error);
+  alert("Something went wrong with server, Try again later");
+}
+
 function clickHandler() {
   var inpText = textInput.value;
 
@@ -19,6 +24,7 @@ function clickHandler() {
     .then((json) => {
       var finalOutput = json.contents.translated;
       outputBox.innerText = finalOutput;
-    });
+    })
+    .catch(errorHandler);
 }
 btnTranslate.addEventListener("click", clickHandler);
